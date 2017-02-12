@@ -27,7 +27,7 @@ const Typing = {
       position: 'relative',
       font: 'inherit',
       color: 'inherit'
-    }
+    };
     // this.style = 'style="display:inline;position:relative;font:inherit;color:inherit;"';
     this.el = document.querySelector(this.el);
     this.strings = this._toArray(this.options.strings);
@@ -413,7 +413,6 @@ const Typing = {
 };
 
 function TypingFactory (el, opt) {
-  let secret = 'secret agent';
 
   return Object.assign(Object.create(Typing), {
     el : el,
@@ -433,9 +432,6 @@ function TypingFactory (el, opt) {
       startDelete: false,
       strings: [],
       callback: function() {},
-    }, opt),
-    profession () {
-      return secret;
-    }
+    }, opt)
   })
 }

@@ -21,13 +21,15 @@
     <script type="text/javascript">
 
       TypingFactory('#EL1', {
+        loop: true,
+        deleteSpeed: 40,
         startDelete: true,
         strings: ['something', 'something', 'something']
       })
       .start()
       .insertBreak()
       .startTyping(['more of something'])
-      .changeSettings({speed: 150})
+      .changeSettings({speed: 50})
       .insertBreak()
       .setPause(1500)
       .startTyping('<a href="#">murkowski</a>')
